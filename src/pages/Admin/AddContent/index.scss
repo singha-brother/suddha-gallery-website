@@ -1,0 +1,83 @@
+.main {
+  padding: 2rem 2rem;
+
+  .form {
+    // margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.6rem;
+    max-width: 600px;
+
+    h2 {
+      font-size: 2.4rem;
+      color: var(--grey-800);
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: var(--grey-800);
+      font-weight: 700;
+    }
+
+    input {
+      font-size: 1.6rem;
+      padding: 1rem;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 1rem;
+
+      &[type="text"] {
+      }
+
+      &[type="file"] {
+        background-color: var(--grey-800);
+        padding: 1.5rem;
+        color: #fff;
+      }
+    }
+
+    select {
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+    }
+
+    .description {
+      min-height: 15rem;
+
+      padding: 1.5rem 2rem;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      border-radius: 1rem;
+    }
+
+    .btn-submit {
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      border: none;
+      color: #fff;
+      font-weight: bolder;
+      cursor: pointer;
+      background: linear-gradient(
+        to right,
+        var(--light-blue-700),
+        var(--light-blue-900)
+      );
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}

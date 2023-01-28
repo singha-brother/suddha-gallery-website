@@ -1,0 +1,85 @@
+.image-card {
+  position: relative;
+  width: 90%;
+  max-width: 360px;
+  margin: 3rem auto;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    // transform: scale(102%);
+
+    .info {
+      transform: translateY(0);
+    }
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+    transform: translateX(-150%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @media (max-width: 600px) {
+      & {
+        transform: translateX(0);
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .size {
+      margin-bottom: 0.3rem;
+      font-size: 1.4rem;
+    }
+
+    .category {
+      font-size: 1.4rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: none;
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    .btn-edit {
+      background: rgb(109, 2, 109);
+    }
+
+    .btn-delete {
+      background: red;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.icon-container {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  left: 2rem;
+  background-color: #fff;
+  padding: 0.3rem 0.3rem;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: var(--grey-800);
+  z-index: 20;
+
+  span {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
